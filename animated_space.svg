@@ -167,5 +167,31 @@
       repeatCount="indefinite"/>
   </path>
 
-</svg>
 
+  <!-- TEXTO INTEGRADO EN EL UNIVERSO -->
+
+  <text
+    x="600"
+    y="190"
+    text-anchor="middle"
+    fill="#E6D9FF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="400"
+    letter-spacing="6">
+    WELCOME TO
+  </text>
+
+  <text
+    x="600"
+    y="235"
+    text-anchor="middle"
+    fill="#A8F0E5"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42"
+    font-weight="700"
+    letter-spacing="5">
+    PAOLA'S LAB
+  </text>
+
+</svg>
