@@ -523,7 +523,7 @@
   </g>
 
 
-  <!-- ========================= -->
+   <!-- ========================= -->
   <!-- ESCENA 3 -->
   <!-- ROBOT + ROBOTICS -->
   <!-- ========================= -->
@@ -588,8 +588,8 @@
 
       <animate
         attributeName="opacity"
-        values="0;0;0;0;1;1;0;0"
-        keyTimes="0;0.64;0.66;0.69;0.72;0.79;0.82;1"
+        values="0;0;0;1;1;0;0"
+        keyTimes="0;0.64;0.66;0.69;0.79;0.82;1"
         dur="18s"
         repeatCount="indefinite"/>
 
@@ -670,6 +670,7 @@
 
 
       <!-- OJO IZQUIERDO -->
+
       <circle
         cx="-25"
         cy="-8"
@@ -686,6 +687,7 @@
 
 
       <!-- OJO DERECHO -->
+
       <circle
         cx="25"
         cy="-8"
@@ -724,11 +726,13 @@
         cy="52"
         r="3"
         fill="#67E8F9">
+
         <animate
           attributeName="opacity"
           values="0.3;1;0.3"
           dur="1.4s"
           repeatCount="indefinite"/>
+
       </circle>
 
       <circle
@@ -736,11 +740,13 @@
         cy="52"
         r="3"
         fill="#A8F0E5">
+
         <animate
           attributeName="opacity"
           values="1;0.3;1"
           dur="1.4s"
           repeatCount="indefinite"/>
+
       </circle>
 
       <circle
@@ -748,11 +754,13 @@
         cy="52"
         r="3"
         fill="#C9B6FF">
+
         <animate
           attributeName="opacity"
           values="0.3;1;0.3"
           dur="1.8s"
           repeatCount="indefinite"/>
+
       </circle>
 
       <circle
@@ -760,11 +768,13 @@
         cy="52"
         r="3"
         fill="#67E8F9">
+
         <animate
           attributeName="opacity"
           values="1;0.3;1"
           dur="1.8s"
           repeatCount="indefinite"/>
+
       </circle>
 
     </g>
@@ -793,7 +803,7 @@
       <animate
         attributeName="opacity"
         values="0;0;0;0;1;1;0"
-        keyTimes="0;0.64;0.79;0.82;0.85;0.96;1"
+        keyTimes="0;0.64;0.82;0.84;0.87;0.96;1"
         dur="18s"
         repeatCount="indefinite"/>
 
