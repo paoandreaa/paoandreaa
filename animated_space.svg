@@ -11,4 +11,12 @@
 
   <circle cx="600" cy="250" r="3" fill="#A8F0E5"/>
   <circle cx="950" cy="100" r="3" fill="#E6D9FF"/>
+
+  <circle cx="0" cy="80" r="3" fill="#A8F0E5">
+    <animate
+      attributeName="cx"
+      values="0;1200"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </circle>
 </svg>
