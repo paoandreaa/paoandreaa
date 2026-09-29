@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
   <rect width="1200" height="400" fill="#090014"/>
-  <circle cx="200" cy="150" r="3" fill="#C9B6FF"/>
+
+  <circle cx="200" cy="150" r="3" fill="#C9B6FF">
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </circle>
+
   <circle cx="600" cy="250" r="3" fill="#A8F0E5"/>
   <circle cx="950" cy="100" r="3" fill="#E6D9FF"/>
 </svg>
