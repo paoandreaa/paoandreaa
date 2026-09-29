@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
   <rect width="1200" height="400" fill="#090014"/>
 
-  <!-- Estrella lila que titila -->
+  <!-- Estrella lila -->
   <circle cx="200" cy="150" r="3" fill="#C9B6FF">
     <animate
       attributeName="opacity"
@@ -11,10 +11,49 @@
   </circle>
 
   <!-- Estrella aguamarina -->
-  <circle cx="600" cy="250" r="3" fill="#A8F0E5"/>
+  <circle cx="600" cy="250" r="3" fill="#A8F0E5">
+    <animate
+      attributeName="opacity"
+      values="0.3;1;0.3"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </circle>
 
   <!-- Estrella lila clara -->
-  <circle cx="950" cy="100" r="3" fill="#E6D9FF"/>
+  <circle cx="950" cy="100" r="3" fill="#E6D9FF">
+    <animate
+      attributeName="opacity"
+      values="0.1;1;0.1"
+      dur="2.5s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Estrellita pequeña -->
+  <circle cx="380" cy="70" r="2" fill="#A8F0E5">
+    <animate
+      attributeName="opacity"
+      values="0.2;0.8;0.2"
+      dur="1.7s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Estrellita pequeña -->
+  <circle cx="800" cy="180" r="2" fill="#C9B6FF">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.9;0.1"
+      dur="2.8s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Estrellita pequeña -->
+  <circle cx="1050" cy="300" r="2" fill="#A8F0E5">
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="2.2s"
+      repeatCount="indefinite"/>
+  </circle>
 
   <!-- Estrella fugaz diagonal -->
   <circle cx="0" cy="80" r="3" fill="#A8F0E5">
