@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
 
   <defs>
+
     <!-- Nebulosa lila -->
     <radialGradient id="nebulaPurple">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/>
@@ -14,12 +15,24 @@
       <stop offset="50%" stop-color="#2DD4BF" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#090014" stop-opacity="0"/>
     </radialGradient>
+
   </defs>
 
-  <!-- Fondo -->
-  <rect width="1200" height="400" fill="#090014"/>
 
+  <!-- ================================= -->
+  <!-- FONDO -->
+  <!-- ================================= -->
+
+  <rect
+    width="1200"
+    height="400"
+    fill="#090014"/>
+
+
+  <!-- ================================= -->
   <!-- NEBULOSA SÚPER SUTIL -->
+  <!-- ================================= -->
+
   <ellipse
     cx="350"
     cy="180"
@@ -35,74 +48,117 @@
     fill="url(#nebulaAqua)"/>
 
 
+  <!-- ================================= -->
   <!-- ESTRELLAS REDONDAS -->
+  <!-- ================================= -->
 
   <circle cx="120" cy="70" r="3" fill="#C9B6FF">
-    <animate attributeName="opacity" values="0.2;1;0.2"
-      dur="2s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="2s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="300" cy="170" r="3" fill="#A8F0E5">
-    <animate attributeName="opacity" values="0.1;0.9;0.1"
-      dur="2.7s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;0.9;0.1"
+      dur="2.7s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="500" cy="80" r="3" fill="#E6D9FF">
-    <animate attributeName="opacity" values="0.2;1;0.2"
-      dur="3.2s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="3.2s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="720" cy="130" r="3" fill="#C9B6FF">
-    <animate attributeName="opacity" values="0.1;1;0.1"
-      dur="1.8s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;1;0.1"
+      dur="1.8s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="900" cy="60" r="3" fill="#A8F0E5">
-    <animate attributeName="opacity" values="0.3;1;0.3"
-      dur="2.4s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.3;1;0.3"
+      dur="2.4s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="1080" cy="180" r="3" fill="#E6D9FF">
-    <animate attributeName="opacity" values="0.1;0.8;0.1"
-      dur="3.5s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;0.8;0.1"
+      dur="3.5s"
+      repeatCount="indefinite"/>
   </circle>
 
 
+  <!-- ================================= -->
   <!-- ESTRELLAS PEQUEÑAS -->
+  <!-- ================================= -->
 
   <circle cx="60" cy="220" r="2" fill="#A8F0E5">
-    <animate attributeName="opacity" values="0.2;0.8;0.2"
-      dur="1.6s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.2;0.8;0.2"
+      dur="1.6s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="180" cy="300" r="2" fill="#E6D9FF">
-    <animate attributeName="opacity" values="0.1;0.9;0.1"
-      dur="2.9s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;0.9;0.1"
+      dur="2.9s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="400" cy="250" r="2" fill="#A8F0E5">
-    <animate attributeName="opacity" values="0.1;0.8;0.1"
-      dur="3.1s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;0.8;0.1"
+      dur="3.1s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="650" cy="330" r="2" fill="#A8F0E5">
-    <animate attributeName="opacity" values="0.2;0.8;0.2"
-      dur="3.3s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.2;0.8;0.2"
+      dur="3.3s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="850" cy="350" r="2" fill="#C9B6FF">
-    <animate attributeName="opacity" values="0.2;1;0.2"
-      dur="2.8s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="2.8s"
+      repeatCount="indefinite"/>
   </circle>
 
   <circle cx="1040" cy="340" r="2" fill="#E6D9FF">
-    <animate attributeName="opacity" values="0.1;1;0.1"
-      dur="2.5s" repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.1;1;0.1"
+      dur="2.5s"
+      repeatCount="indefinite"/>
   </circle>
 
 
+  <!-- ================================= -->
   <!-- ESTRELLAS DE 4 PUNTAS -->
+  <!-- ================================= -->
 
+  <!-- 1. Lila -->
   <path
     d="M 230 90
        L 233 98
@@ -113,28 +169,38 @@
        L 219 101
        L 227 98 Z"
     fill="#E6D9FF">
-    <animate attributeName="opacity"
+
+    <animate
+      attributeName="opacity"
       values="0.2;1;0.2"
       dur="2.4s"
       repeatCount="indefinite"/>
+
   </path>
 
+
+  <!-- 2. Aguamarina -->
   <path
-    d="M 580 220
-       L 583 228
-       L 591 231
-       L 583 234
-       L 580 242
-       L 577 234
-       L 569 231
-       L 577 228 Z"
+    d="M 470 270
+       L 473 278
+       L 481 281
+       L 473 284
+       L 470 292
+       L 467 284
+       L 459 281
+       L 467 278 Z"
     fill="#A8F0E5">
-    <animate attributeName="opacity"
+
+    <animate
+      attributeName="opacity"
       values="0.1;1;0.1"
       dur="3s"
       repeatCount="indefinite"/>
+
   </path>
 
+
+  <!-- 3. Lila -->
   <path
     d="M 780 70
        L 783 78
@@ -145,12 +211,17 @@
        L 769 81
        L 777 78 Z"
     fill="#C9B6FF">
-    <animate attributeName="opacity"
+
+    <animate
+      attributeName="opacity"
       values="0.2;1;0.2"
       dur="1.9s"
       repeatCount="indefinite"/>
+
   </path>
 
+
+  <!-- 4. Lila -->
   <path
     d="M 1000 280
        L 1003 288
@@ -161,14 +232,156 @@
        L 989 291
        L 997 288 Z"
     fill="#E6D9FF">
-    <animate attributeName="opacity"
+
+    <animate
+      attributeName="opacity"
       values="0.1;0.9;0.1"
       dur="2.7s"
       repeatCount="indefinite"/>
+
   </path>
 
 
-  <!-- TEXTO INTEGRADO EN EL UNIVERSO -->
+  <!-- 5. Nueva estrella aguamarina -->
+  <path
+    d="M 330 310
+       L 333 318
+       L 341 321
+       L 333 324
+       L 330 332
+       L 327 324
+       L 319 321
+       L 327 318 Z"
+    fill="#A8F0E5">
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.9;0.15"
+      dur="3.6s"
+      repeatCount="indefinite"/>
+
+  </path>
+
+
+  <!-- ================================= -->
+  <!-- PUNTITOS VOLADORES -->
+  <!-- ================================= -->
+
+  <!-- 1. Aguamarina -->
+  <circle
+    cx="80"
+    cy="145"
+    r="2.5"
+    fill="#A8F0E5">
+
+    <animateMotion
+      dur="7s"
+      repeatCount="indefinite"
+      path="M 0 0 C 180 -35, 380 35, 620 0"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0.9;0.9;0"
+      keyTimes="0;0.15;0.8;1"
+      dur="7s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- 2. Lila -->
+  <circle
+    cx="1000"
+    cy="115"
+    r="2"
+    fill="#C9B6FF">
+
+    <animateMotion
+      dur="9s"
+      repeatCount="indefinite"
+      path="M 0 0 C -170 30, -350 -25, -570 10"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0.8;0.8;0"
+      keyTimes="0;0.2;0.85;1"
+      dur="9s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- 3. Aguamarina -->
+  <circle
+    cx="200"
+    cy="330"
+    r="2"
+    fill="#67E8F9">
+
+    <animateMotion
+      dur="10s"
+      repeatCount="indefinite"
+      path="M 0 0 C 170 -25, 350 20, 700 -5"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0.8;0.8;0"
+      keyTimes="0;0.2;0.8;1"
+      dur="10s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- 4. Lila -->
+  <circle
+    cx="1100"
+    cy="300"
+    r="2.5"
+    fill="#E6D9FF">
+
+    <animateMotion
+      dur="8s"
+      repeatCount="indefinite"
+      path="M 0 0 C -150 25, -320 -35, -650 0"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0.9;0.9;0"
+      keyTimes="0;0.15;0.85;1"
+      dur="8s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- 5. Aguamarina -->
+  <circle
+    cx="450"
+    cy="110"
+    r="2"
+    fill="#A8F0E5">
+
+    <animateMotion
+      dur="6s"
+      repeatCount="indefinite"
+      path="M 0 0 C 100 20, 250 -25, 480 5"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0.8;0.8;0"
+      keyTimes="0;0.2;0.85;1"
+      dur="6s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- ================================= -->
+  <!-- TEXTO -->
+  <!-- ================================= -->
+
+  <!-- WELCOME TO -->
 
   <text
     x="600"
@@ -179,8 +392,19 @@
     font-size="24"
     font-weight="400"
     letter-spacing="6">
+
     WELCOME TO
+
+    <animate
+      attributeName="opacity"
+      values="0.65;1;0.65"
+      dur="4s"
+      repeatCount="indefinite"/>
+
   </text>
+
+
+  <!-- PAOLA'S LAB -->
 
   <text
     x="600"
@@ -191,7 +415,24 @@
     font-size="42"
     font-weight="700"
     letter-spacing="5">
+
     PAOLA'S LAB
+
+    <!-- Respiración suave -->
+    <animate
+      attributeName="opacity"
+      values="0.8;1;0.8"
+      dur="3.5s"
+      repeatCount="indefinite"/>
+
+    <!-- Movimiento vertical pequeñísimo -->
+    <animate
+      attributeName="y"
+      values="235;232;235"
+      dur="5s"
+      repeatCount="indefinite"/>
+
   </text>
+
 
 </svg>
