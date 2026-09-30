@@ -22,7 +22,27 @@
       </feMerge>
     </filter>
 
+    <!-- SOLO AÑADIDO PARA LOS ENGRANAJES -->
+    <filter id="gearGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="gearAqua" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8F0E5"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+
+    <linearGradient id="gearPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6D9FF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
   </defs>
+
 
 
   <!-- ========================= -->
@@ -44,6 +64,7 @@
     rx="400"
     ry="180"
     fill="url(#nebulaAqua)"/>
+
 
 
   <!-- ========================= -->
@@ -111,6 +132,7 @@
     </circle>
 
 
+
     <!-- IZQUIERDA -->
 
     <circle cx="30" cy="145" r="1.5" fill="#FFFFFF">
@@ -146,6 +168,7 @@
     </circle>
 
 
+
     <!-- DERECHA -->
 
     <circle cx="920" cy="140" r="1.8" fill="#FFFFFF">
@@ -175,6 +198,7 @@
     <circle cx="1020" cy="365" r="1.5" fill="#FFFFFF">
       <animate attributeName="opacity" values="0.15;1;0.15" dur="2.9s" repeatCount="indefinite"/>
     </circle>
+
 
 
     <!-- INFERIOR -->
@@ -214,6 +238,7 @@
   </g>
 
 
+
   <!-- ========================= -->
   <!-- ESTRELLAS PRINCIPALES -->
   <!-- ========================= -->
@@ -243,6 +268,7 @@
   </circle>
 
 
+
   <!-- ========================= -->
   <!-- ESTRELLAS PEQUEÑAS -->
   <!-- ========================= -->
@@ -270,6 +296,7 @@
   <circle cx="1040" cy="340" r="2.3" fill="#FFFFFF">
     <animate attributeName="opacity" values="0.1;1;0.1" dur="2.5s" repeatCount="indefinite"/>
   </circle>
+
 
 
   <!-- ========================= -->
@@ -342,6 +369,7 @@
   </path>
 
 
+
   <!-- ========================= -->
   <!-- SOLO 5 PUNTITOS MÓVILES -->
   <!-- ========================= -->
@@ -412,6 +440,7 @@
   </circle>
 
 
+
   <!-- ========================= -->
   <!-- ESCENA 1 -->
   <!-- ========================= -->
@@ -440,6 +469,7 @@
     </text>
 
 
+
     <text
       x="600"
       y="235"
@@ -450,7 +480,7 @@
       font-weight="700"
       letter-spacing="5">
 
-      PAOLA'S LAB
+      PAO'S LAB
 
       <animate
         attributeName="opacity"
@@ -470,19 +500,256 @@
   </g>
 
 
+
   <!-- ========================= -->
   <!-- ESCENA 2 -->
   <!-- ========================= -->
 
   <g>
 
+    <!-- ENGRANAJE BLANCO IZQUIERDO -->
+    <g transform="translate(245 205)">
+      <animate
+        attributeName="opacity"
+        values="0;0;0.72;0.72;0;0"
+        keyTimes="0;0.30;0.34;0.51;0.54;1"
+        dur="18s"
+        repeatCount="indefinite"/>
+
+      <g filter="url(#gearGlow)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="12s"
+          repeatCount="indefinite"/>
+
+        <g fill="#FFFFFF" opacity="0.55">
+          <rect x="-5" y="-48" width="10" height="18" rx="2"/>
+          <rect x="-5" y="30" width="10" height="18" rx="2"/>
+          <rect x="-48" y="-5" width="18" height="10" rx="2"/>
+          <rect x="30" y="-5" width="18" height="10" rx="2"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(45)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(135)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(225)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(315)"/>
+        </g>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="34"
+          fill="#17102A"
+          stroke="#FFFFFF"
+          stroke-width="3"/>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="13"
+          fill="#090014"
+          stroke="#FFFFFF"
+          stroke-width="3"/>
+      </g>
+    </g>
+
+
+    <!-- ENGRANAJE BLANCO DERECHO -->
+    <g transform="translate(955 205)">
+      <animate
+        attributeName="opacity"
+        values="0;0;0.72;0.72;0;0"
+        keyTimes="0;0.30;0.34;0.51;0.54;1"
+        dur="18s"
+        repeatCount="indefinite"/>
+
+      <g filter="url(#gearGlow)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="360"
+          to="0"
+          dur="12s"
+          repeatCount="indefinite"/>
+
+        <g fill="#FFFFFF" opacity="0.55">
+          <rect x="-5" y="-48" width="10" height="18" rx="2"/>
+          <rect x="-5" y="30" width="10" height="18" rx="2"/>
+          <rect x="-48" y="-5" width="18" height="10" rx="2"/>
+          <rect x="30" y="-5" width="18" height="10" rx="2"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(45)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(135)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(225)"/>
+          <rect x="-5" y="-48" width="10" height="18" rx="2" transform="rotate(315)"/>
+        </g>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="34"
+          fill="#17102A"
+          stroke="#FFFFFF"
+          stroke-width="3"/>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="13"
+          fill="#090014"
+          stroke="#FFFFFF"
+          stroke-width="3"/>
+      </g>
+    </g>
+
+
+    <!-- ENGRANAJE BLANCO SUPERIOR -->
+    <g transform="translate(735 115)">
+      <animate
+        attributeName="opacity"
+        values="0;0;0.65;0.65;0;0"
+        keyTimes="0;0.30;0.34;0.51;0.54;1"
+        dur="18s"
+        repeatCount="indefinite"/>
+
+      <g filter="url(#gearGlow)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="9s"
+          repeatCount="indefinite"/>
+
+        <g fill="#FFFFFF" opacity="0.45">
+          <rect x="-4" y="-34" width="8" height="14" rx="2"/>
+          <rect x="-4" y="20" width="8" height="14" rx="2"/>
+          <rect x="-34" y="-4" width="14" height="8" rx="2"/>
+          <rect x="20" y="-4" width="14" height="8" rx="2"/>
+          <rect x="-4" y="-34" width="8" height="14" rx="2" transform="rotate(45)"/>
+          <rect x="-4" y="-34" width="8" height="14" rx="2" transform="rotate(135)"/>
+          <rect x="-4" y="-34" width="8" height="14" rx="2" transform="rotate(225)"/>
+          <rect x="-4" y="-34" width="8" height="14" rx="2" transform="rotate(315)"/>
+        </g>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="23"
+          fill="#17102A"
+          stroke="#FFFFFF"
+          stroke-width="2"/>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="8"
+          fill="#090014"
+          stroke="#FFFFFF"
+          stroke-width="2"/>
+      </g>
+    </g>
+
+
+    <!-- ENGRANAJE AQUA -->
+    <g transform="translate(365 125)">
+      <animate
+        attributeName="opacity"
+        values="0;0;0.85;0.85;0;0"
+        keyTimes="0;0.30;0.34;0.51;0.54;1"
+        dur="18s"
+        repeatCount="indefinite"/>
+
+      <g filter="url(#gearGlow)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="360"
+          to="0"
+          dur="7s"
+          repeatCount="indefinite"/>
+
+        <g fill="url(#gearAqua)">
+          <rect x="-3" y="-25" width="6" height="11" rx="1"/>
+          <rect x="-3" y="14" width="6" height="11" rx="1"/>
+          <rect x="-25" y="-3" width="11" height="6" rx="1"/>
+          <rect x="14" y="-3" width="11" height="6" rx="1"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(45)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(135)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(225)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(315)"/>
+        </g>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="17"
+          fill="#17102A"
+          stroke="#A8F0E5"
+          stroke-width="2"/>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="6"
+          fill="#A8F0E5"/>
+      </g>
+    </g>
+
+
+    <!-- ENGRANAJE MORADO -->
+    <g transform="translate(835 270)">
+      <animate
+        attributeName="opacity"
+        values="0;0;0.85;0.85;0;0"
+        keyTimes="0;0.30;0.34;0.51;0.54;1"
+        dur="18s"
+        repeatCount="indefinite"/>
+
+      <g filter="url(#gearGlow)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="8s"
+          repeatCount="indefinite"/>
+
+        <g fill="url(#gearPurple)">
+          <rect x="-3" y="-25" width="6" height="11" rx="1"/>
+          <rect x="-3" y="14" width="6" height="11" rx="1"/>
+          <rect x="-25" y="-3" width="11" height="6" rx="1"/>
+          <rect x="14" y="-3" width="11" height="6" rx="1"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(45)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(135)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(225)"/>
+          <rect x="-3" y="-25" width="6" height="11" rx="1" transform="rotate(315)"/>
+        </g>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="17"
+          fill="#17102A"
+          stroke="#C9B6FF"
+          stroke-width="2"/>
+
+        <circle
+          cx="0"
+          cy="0"
+          r="6"
+          fill="#C9B6FF"/>
+      </g>
+    </g>
+
+
     <text
       x="600"
-      y="190"
+      y="220"
       text-anchor="middle"
-      fill="#E6D9FF"
+      fill="#A8F0E5"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="25"
+      font-size="30"
       font-weight="400"
       letter-spacing="5">
 
@@ -498,13 +765,14 @@
     </text>
 
 
+
     <text
       x="600"
-      y="235"
+      y="250"
       text-anchor="middle"
-      fill="#A8F0E5"
+      fill="#E6D9FF"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="38"
+      font-size="20"
       font-weight="700"
       letter-spacing="7">
 
@@ -520,6 +788,7 @@
     </text>
 
   </g>
+
 
 
   <!-- ========================= -->
@@ -551,6 +820,7 @@
     </text>
 
 
+
     <text
       x="440"
       y="220"
@@ -573,6 +843,7 @@
     </text>
 
 
+
     <!-- ========================= -->
     <!-- CARITA DEL ROBOT -->
     <!-- ========================= -->
@@ -587,6 +858,7 @@
         keyTimes="0;0.54;0.56;0.59;0.84;0.88;1"
         dur="18s"
         repeatCount="indefinite"/>
+
 
 
       <!-- Antena -->
@@ -615,6 +887,7 @@
       </circle>
 
 
+
       <!-- Orejitas -->
 
       <rect
@@ -638,6 +911,7 @@
         stroke-width="3"/>
 
 
+
       <!-- Cabeza -->
 
       <rect
@@ -651,6 +925,7 @@
         stroke-width="4"/>
 
 
+
       <!-- Pantalla -->
 
       <rect
@@ -662,6 +937,7 @@
         fill="#090014"
         stroke="#6D28D9"
         stroke-width="2"/>
+
 
 
       <!-- OJO IZQUIERDO -->
@@ -681,6 +957,7 @@
       </circle>
 
 
+
       <!-- OJO DERECHO -->
 
       <circle
@@ -698,10 +975,12 @@
       </circle>
 
 
+
       <!-- Brillitos en los ojos -->
 
       <circle cx="-29" cy="-12" r="3" fill="#FFFFFF"/>
       <circle cx="21" cy="-12" r="3" fill="#FFFFFF"/>
+
 
 
       <!-- BOQUITA FASCINADA -->
@@ -712,6 +991,7 @@
         stroke="#C9B6FF"
         stroke-width="4"
         stroke-linecap="round"/>
+
 
 
       <!-- Pequeños indicadores -->
@@ -775,6 +1055,7 @@
     </g>
 
   </g>
+
 
 
   <!-- ========================= -->
